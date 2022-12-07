@@ -16,5 +16,5 @@
 - Prendas en general
 - Artículos de impresión 3D en general
 
-## El público objetivo ronda entre los 15 años y los 35 años 
+### *El público objetivo ronda entre los 15 años y los 35 años*
 
