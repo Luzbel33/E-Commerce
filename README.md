@@ -15,7 +15,7 @@
 ### La tipógrafía a utilizar será [Spectral](https://fonts.google.com/specimen/Spectral?selection.family=Catamaran:wght@100;300;500;800;900|Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900)
 
 ### Paleta de colores:
- https://color.adobe.com/es/mythemes?viewTheme
+ [paleta](https://color.adobe.com/es/mythemes?viewTheme)
 - `#F252AA`
 - `#842ABF`
 - `#F2C12E`
