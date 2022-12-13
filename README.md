@@ -15,12 +15,6 @@
 ### La tipógrafía a utilizar será [Spectral](https://fonts.google.com/specimen/Spectral?selection.family=Catamaran:wght@100;300;500;800;900|Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900)
 
 ### Paleta de colores:
-- `RGB 242, 82, 170`
-- `RGB 132, 42, 191`
-- `RGB 242, 193, 46`
-- `RGB 242, 144, 87`
-- `RGB 242, 242, 242`
-
 ![Paleta](https://i.postimg.cc/3RzBCgCv/paleta.jpg)
 
 ### Logo
