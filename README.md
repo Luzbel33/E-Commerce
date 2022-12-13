@@ -21,7 +21,7 @@
 - `RGB 242, 144, 87`
 - `RGB 242, 242, 242`
 
-![Paleta](https://postimg.cc/bDHkqS5y)
+![Paleta](https://i.postimg.cc/3RzBCgCv/paleta.jpg)
 
 ### Logo
  ![Logo](https://cdn.dribbble.com/users/68544/screenshots/16706697/media/89fe0284962d7064c9fba45971c935bd.png)
