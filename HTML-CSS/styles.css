@@ -1,0 +1,189 @@
+@import url("https://fonts.google.com/specimen/Spectral?selection.family=Catamaran:wght@100;300;500;800;900|Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Roboto", "sans-serif";
+}
+
+:root {
+    --primary: red;
+    --secondary: green;
+}
+
+body{
+    background-color:rgba(226, 70, 156, 1)
+    }
+    
+.contenedor {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    background-color: rgba(76, 26, 108, 1);
+    padding: 10px;
+}
+.div1 {
+    background-color: white;
+    height: 45px;
+    width: 1400px;
+    margin: 75px;
+    border-radius: 40px;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+}
+#img1{
+    display: flex;
+    height: 200px;
+    margin: 0px;
+}
+.div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(240, 217, 12);
+    height: 80px;
+    width: 80px;
+    margin: 60px;
+    border-radius: 15px;
+    box-shadow: 0.5px 2.5px 10.5px 1.5px black;
+}
+.div3 {
+    background-color: rgba(76, 26, 108, 1);
+    height: 5px;
+    width: 50px;
+    margin: 3px;
+    border-radius: 15px;
+}
+
+.banner {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+}
+#img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 1857px;
+    height: 500px;
+    margin: -10px;
+}
+
+.articulos {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 20px;
+}
+#img3 {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    margin: auto;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+}
+#img4 {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    margin: auto;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+}
+#img5 {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 524px;
+    height: 568px;
+    border-radius: 40px;
+    margin: auto;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+}
+#precio {
+    font-size: 2em
+}
+#boton{
+    background-color: rgba(132, 42, 191, 1);
+    display: inline-block;
+    flex-direction:row;
+    justify-content: center;
+    margin: 0 75px;
+    font-size: 40px;
+    border-radius: 2rem;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+}
+
+.foot {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: rgba(76, 26, 108, 1);
+    padding: 10px;
+    margin: auto;
+}
+#social{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 25px;
+    margin: 0 8px;
+    font-size: 1.5em;
+}
+#foot-titles{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+ #foot3, #foot4{
+    display: flex;
+    flex-direction:column;
+    padding: 5px;
+    font-size: 1.5em;
+}
+#foot-img{
+    display: flex;
+    height: 200px;
+    margin: 0px;
+}
+#copyright{
+    font-size: 1.5em;
+    color:rgb(240, 217, 12);
+}
+
+
+.product-detail {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+#product-title{
+    display: flex;
+    margin: 20px;
+    font-size: 2em; 
+}
+#product-desc{
+    display: flex;
+    margin: 20px;
+    font-size: 1.5em; 
+}
+
+#boton2{
+    background-color: rgba(132, 42, 191, 1);
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 0 400px;
+    font-size: 40px;
+    border-radius: 2rem;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+}
