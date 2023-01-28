@@ -14,47 +14,52 @@ font-family: "Roboto", "sans-serif";
 
 body{
     background-color:rgba(226, 70, 156, 1)
-    }
-    
+}
+
+
 .contenedor {
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: rgba(76, 26, 108, 1);
-    padding: 10px;
+    gap: 20px;
 }
 .div1 {
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
-    height: 45px;
-    width: 1400px;
-    min-width: 350px;
-    margin: 75px;
+    min-width: 120px;
+    height: 15px;
+    margin: 25px;
     border-radius: 40px;
     box-shadow: 0.5px 2.5px 20.5px 0.5px black;
 }
-#img1{
-    display: flex;
-    height: 200px;
-    margin: 0px;
+.img1{
+    height: 50px;
+    margin: 3px;
 }
 .div2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 2.5px;
     background-color: rgb(240, 217, 12);
-    min-height: 80px;
-    min-width: 80px;
-    margin: 60px;
-    border-radius: 15px;
+    min-height: 2.5px;
+    min-width: 30px;
+    margin: 15px;
+    border-radius: 10px;
     box-shadow: 0.5px 2.5px 10.5px 1.5px black;
+    cursor: pointer;
 }
 .div3 {
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgba(76, 26, 108, 1);
-    height: 5px;
-    width: 50px;
-    margin: 3px;
+    min-height: 3px;
+    min-width: 15px;
     border-radius: 15px;
 }
 
@@ -62,131 +67,556 @@ body{
     display: flex;
     flex-direction:row;
     justify-content: center;
-    min-width: 350px;
-    padding: 10px;
-    border-radius: 40px;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    min-height: 20vh;
+    border-radius:00px;
     box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+    overflow: hidden;
 }
-#img2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 1857px;
-    height: 500px;
-    margin: -10px;
+.img2{
+    width: 100%;
+    margin: 0px;
 }
 
 .articulos {
     display: flex;
     flex-direction:row;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 5px;
 }
-#img3, #img4{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
+.title {
+    padding: 20px;
+    font-size: 1.7rem;
+}
+.img3 {
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+}
+.img4, .img5{
+    display: none;
     padding: 10px;
     border-radius: 40px;
     margin: auto;
     box-shadow: 0.5px 2.5px 20.5px 0.5px black;
 }
 
-#img5 {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    width: 524px;
-    height: 590px;
+.img5 {
     padding: 10px;
     border-radius: 40px;
     margin: auto;
     box-shadow: 0.5px 2.5px 20.5px 0.5px black;
 }
-#precio {
+.desc{
+    font-size: 1.2rem;
+}
+.precio {
+    display: flex;
+    flex-direction: row-reverse;
     font-size: 2em
 }
-#boton{
+
+.boton{
     background-color: rgba(132, 42, 191, 1);
-    display: inline-block;
-    flex-direction:row;
-    justify-content: center;
-    padding: 5px;
-    margin: 50px;
+    padding: 2.5px;
+    margin: 20px;
     font-size: 40px;
     border-radius: 2rem;
     box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
 }
 
+.botones{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#product2, #product3{
+    display: none;
+}
+
 .foot {
     display: flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: rgba(76, 26, 108, 1);
     padding: 10px;
     margin: auto;
 }
-#social{
+.social{
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 10px;
     margin: 0 8px;
-    font-size: 1.5em;
+    font-size: 2em;
 }
-#foot-titles{
+.foot-titles{
     display: flex;
     flex-direction:row;
     justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
 }
- #foot3, #foot4{
-    display: flex;
+.foot-desc, .foot-desc2{
+    font-size: 1.2rem;
+}
+ .foot3, .foot4 {
+    display: none;
     flex-direction:column;
+    flex-wrap: wrap;
     padding: 5px;
     font-size: 1.5em;
 }
-#foot-img{
-    display: flex;
+.foot-img{
+    display: none;
     height: 200px;
     margin: 0px;
 }
-#copyright{
+.foot-img2{
+    height: 200px;
+    margin: 0px;
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 1.5em;
     color:rgb(240, 217, 12);
+    width: 100%;
 }
 
+/* PRODUCT-DETAIL/2DA PAGINA */
 
 .product-detail {
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 10px;
 }
-#product-title{
+.product-title{
     display: flex;
+    flex-wrap: wrap;
     margin: 20px;
     font-size: 2em; 
 }
-#product-desc{
+.product-desc{
     display: flex;
+    flex-wrap: wrap;
     margin: 20px;
     font-size: 1.5em; 
 }
+.product-info{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
 
-#boton2{
+.boton4{
+    background-color: rgba(132, 42, 191, 1);
+    padding: 2.5px;
+    margin: 20px;
+    font-size: 40px;
+    border-radius: 2rem;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+}
+
+
+.precio4{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    padding: 5px;
+    font-size: 2em
+}
+
+
+.boton2{
     background-color: rgba(132, 42, 191, 1);
     display: flex;
     flex-direction:row;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0 400px;
     font-size: 40px;
     border-radius: 2rem;
     box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
 }
 
-#copyright {
-    width: 100%;
-    text-align: center;
+
+/* CARRITO/3RA PAGINA */
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: row;
+}
+.carrito{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: rgba(132, 42, 191, 1);
+    max-width: 350px;
+    height: 600px;
+    border-radius: 2rem;
+    box-shadow: 1.5px 3.5px 5.5px 3.5px rgba(0, 0, 0, 0.329);
+}
+#producto1, #producto2, #producto3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#producto1>h1, #producto2>h1, #producto3>h1{
+    font-size: 1.4rem;
+}
+#producto1>p{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1px;
+}
+.img-cart{
+    max-width: 40%;
+    max-height: 60%;
+    border-radius: 25px;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+}
+.boton-cart{
+    background-color: rgba(132, 42, 191, 1);
+    font-size: 20px;
+    width: 18px;
+    height: 25px;
+    border-radius: 2rem;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+}
+
+.boton-cart2{
+background-color: rgba(132, 42, 191, 1);
+padding: 5px;
+margin: -25px 100px 20px;
+font-size: 15px;
+width: 60px;
+height: 30px;
+border-radius: 2rem;
+box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+}
+.total{
+    margin: -15px 0px 0px;
+    padding-left: 15px;
+    font-size: 1rem;
+}
+
+/* PARTE RESPONSIVE PARA DESKTOP */
+
+@media only screen and (min-width: 1020px) {
+
+    body{
+        background-color:rgba(226, 70, 156, 1)
     }
+    
+    
+    .contenedor {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: rgba(76, 26, 108, 1);
+        padding: 15px;
+    }
+    .div1 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        min-width: 1000px;
+        height: 40px;
+        margin: 35px;
+        border-radius: 40px;
+        box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+    }
+    .img1{
+        height: 100px;
+    }
+    .div2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.5px;
+        background-color: rgb(240, 217, 12);
+        min-height: 80px;
+        min-width: 70px;
+        margin: 15px;
+        border-radius: 15px;
+        box-shadow: 0.5px 2.5px 10.5px 1.5px black;
+        cursor: pointer;
+    }
+    .div3 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(76, 26, 108, 1);
+        min-height: 5px;
+        min-width: 40px;
+        margin: 2px;
+        border-radius: 15px;
+    }
+    
+    .banner {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+        overflow: hidden;
+    }
+    .img2{
+        width: 100%;
+    }
+    
+    .articulos {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    #product, #product2, #product3{
+        display: flex;
+        flex-direction:column;;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+  
+    .img3, .img4 {
+        display: flex;
+        padding: 10px;
+        border-radius: 40px;
+        margin: 5px;
+        object-fit:cover;
+        box-shadow: 0.5px 2.5px 20.5px 0.5px black;
+    }
+    .img4{
+        width: 512px;
+        height: 568px;
+    }
+    
+    .img5{
+    display: flex;
+    width: 524px;
+    height: 590px;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 5px;
+    object-fit:cover;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black; 
+    }
+    .title{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .boton{
+        background-color: rgba(132, 42, 191, 1);
+        display: inline-block;
+        flex-direction:row;
+        justify-content: center;
+        margin: 30px;
+        font-size: 35px;
+        border-radius: 2rem;
+        box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+    }
+    
+    /* PRODUCT-DETAIL/2DA PAG*/
+    
+    .product-info{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    
+    .boton4{
+        background-color: rgba(132, 42, 191, 1);
+        padding: 2.5px;
+        margin: 20px;
+        font-size: 40px;
+        border-radius: 2rem;
+        box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+    }
+    
+    
+    .precio4{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 20px;
+        padding: 5px;
+        font-size: 2em
+    }
+    
+    
+    .foot {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: rgba(76, 26, 108, 1);
+        padding: 10px;
+        margin: auto;
+    }
+    .social{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 0 8px;
+        font-size: 2em;
+    }
+    .foot-titles{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 2rem;
+    }
+    .foot-desc, .foot-desc2{
+        font-size: 1.2rem;
+    }
+     .foot3, .foot4{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        padding: 5px;
+        font-size: 1.5em;
+    }
+    .foot-img{
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        margin: 0px;
+    }
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1.5em;
+        color:rgb(240, 217, 12);
+        width: 100%;
+    }
+    
+    
+    .product-detail {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .product-title{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        font-size: 2em; 
+    }
+    .product-desc{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        font-size: 1.5em; 
+    }
+    
+    .boton2{
+        background-color: rgba(132, 42, 191, 1);
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 400px;
+        font-size: 40px;
+        border-radius: 2rem;
+        box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+    }
+
+    /* CARRITO/3RA PAGINA */
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 325px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgba(132, 42, 191, 1);
+    height: 100%;
+    width: 1200px;
+    border-radius: 2rem;
+    box-shadow: 1.5px 3.5px 5.5px 3.5px rgba(0, 0, 0, 0.329);
+}
+
+.carrito{
+    box-shadow: none;
+    height: 100%;    
+}
+#producto1, #producto2, #producto3{
+    margin: 20px;
+}
+#producto1>h1, #producto2>h1, #producto3>h1{
+    font-size: 2rem;
+    padding: 15px;
+}
+#producto1>h2, #producto2>h2, #producto3>h2{
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.img-cart{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+    margin: 10px;
+}
+.boton-cart{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(132, 42, 191, 1);
+    margin: 30px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 2rem;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+}
+
+.boton-cart2{
+    background-color: rgba(132, 42, 191, 1);
+    padding: 10px;
+    margin: -35px 500px 35px;
+    font-size: 1.5rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 2rem;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(242, 193, 46, 0.65);
+    }
+    .total{
+        margin: 0px -150px 0px;
+        padding-left: 15px;
+        font-size: 2rem;
+    }
+
+}
