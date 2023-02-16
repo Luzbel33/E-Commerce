@@ -451,6 +451,9 @@ box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
     padding: 5px;
     font-size: 0.8rem;
 }
+a{
+    text-decoration: none; color:#000; 
+}
 
 /* PARTE RESPONSIVE PARA DESKTOP */
 
