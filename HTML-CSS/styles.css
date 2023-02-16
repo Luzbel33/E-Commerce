@@ -444,6 +444,13 @@ box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
     margin: 10px;
     font-size: 1.2rem;
 }
+.index-botones{
+    color: var(--sixth);
+    margin-right: 50px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 0.8rem;
+}
 
 /* PARTE RESPONSIVE PARA DESKTOP */
 
@@ -873,5 +880,14 @@ box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
     align-items: center;
     padding: 10px;
     font-size: 2rem;
+}
+.index-botones{
+    color: var(--sixth);
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none; color:#000; 
 }
 };
