@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<%- include('./partials/Head') %>
+      
+   <body>
+    <%- include('./partials/Header') %>
+    <main>
+        <form class='login' method="get" action="/info"> 
+            <img class="login-img" src="/imgs/logo2 (3).png" alt="logo"/>
+            <div class="padre">
+                <div class="hijo">
+                    <label for="mail">Mail</label>
+                    <input type="email" name="mail" id="mail" placeholder="Correo electronico"/>
+                </div>
+                <div class="hijo-2">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" placeholder="Contraseña"/>
+                </div>
+            </div>
+        
+                <button type="submit" name="login" id="login">Ingresar</button>
+                
+                <div class ="extras">   
+                   <a href="/register"><p>Registrarse</p></a>
+                    <p>Olvide mi contraseña</p>
+                </div>
+            </form>
+    </main>
+    <%-include('./partials/Footer') %>
+</body>
+</html>

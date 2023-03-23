@@ -28,7 +28,7 @@ body{
     flex-wrap: wrap;
     background-color: var(--primary);
     gap: 10px;
-}
+} 
 .div1 {
     display: flex;
     flex-wrap: wrap;

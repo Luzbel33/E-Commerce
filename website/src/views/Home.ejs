@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<%- include('./partials/Head') %>
+      
+   <body>
+    <%- include('./partials/Header') %>
+    <main>
+        <div class="banner">   
+            <img class="img2" src="/imgs/banner.jpg" alt="banner" />
+    </div>
+    <div class="articulos" >
+        <div id="product"> 
+           <img class="img3" src="/imgs/product1.jpg" alt="berserk" />
+           <h1 class="title">Remera de Anime Berserk</h1>
+           <h2 class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore!</h2>
+           <p class="precio">$3500</p>
+           <div class="botones">
+           <button class="boton"><a href="/cart">Carrito</a></button>
+           <button class="boton"><a href="/detailProduct">Ver mas</a></button>
+           </div>
+        </div>
+
+        <div id="product2"> 
+            <img class="img4" src="/imgs/product2.jpg" alt="ghost-in-the-shell" />
+            <h1 class="title">Remera de Ghost In The Shell</h1>
+            <h2 class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore!</h2>
+            <p class="precio">$3500</p>
+            <div class="botones">
+           <button class="boton">Carrito</button>
+           <button class="boton">Ver mas</button>
+        </div>
+        </div>
+
+        <div id="product3">
+            <img class="img5" src="/imgs/product3.jpg" alt="he-man" />
+            <h1 class="title">Remera de HE-MAN</h1>
+            <h2 class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore!</h2>
+            <p class="precio">$3500</p>
+            <div class="botones">
+           <button class="boton">Carrito</button>
+           <button class="boton">Ver mas</button>
+        </div>
+        </div>
+    </div> 
+    </main>
+    <%-include('./partials/Footer') %>
+</body>
+</html>
