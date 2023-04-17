@@ -8,15 +8,11 @@
     <section>
         <div class="product-detail">
             <div class="product-det-img">
-                <img class="img3" src="/imgs/product1.jpg" alt="berserk">    
-            </div>
-              
-            <div class="product-info">
-                <h1 class="product-title">Remera de Berserk</h1>
-                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt neque placeat illo quia saepe ipsum provident dolore eius nam, repudiandae, officiis optio! Quibusdam quis recusandae quas saepe iusto et, placeat doloribus error culpa voluptatibus deleniti laborum doloremque necessitatibus at commodi. </p>
-                <p class="precio4">$3500</p>
+                <h1 class="product-title"><%= prod.title %></h1>
+                <img class="img3" src="<%= prod.img %>">   
+                <p class="product-desc"><%= prod.desc %> </p> 
+                <p class="precio4"><%= prod.precio %></p>
                 <button class="boton4">Comprar</button>
-            </div>
             </div>
     </section>
     <%-include('./partials/Footer') %>

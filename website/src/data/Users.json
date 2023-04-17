@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "username": "AdminUser",
+      "password": "$2b$10$ngCtCeZztwEd8BOhi8ORqexD/RP76e/WT5jHkoPcGUCX74IibXzBq",
+      "email": "chinchulin@gmail.com",
+      "birthdate": "01-01-01",
+      "country": "Argentina",
+      "phone": "1112233456"
+    },
+    {
+      "id": 2,
+      "name": "Pedro3s",
+      "username": "sadasd",
+      "country": "br",
+      "phone": "1112233435",
+      "email": "gravitty99@gmail.com",
+      "password": "$2b$10$Z8S9sgegi1H8Pxx6HxJd/OAxdUQbVazaZ/LeIakaSk0H.izH6LNqG"
+    }
+  ]
+}

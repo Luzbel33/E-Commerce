@@ -6,24 +6,24 @@
    <body>
     <%- include('./partials/Header') %>
     <main>
-        <form class='login' method="get" action="/info"> 
+        <form class='login' action="login" method="post"> 
             <img class="login-img" src="/imgs/logo2 (3).png" alt="logo"/>
             <div class="padre">
                 <div class="hijo">
-                    <label for="mail">Mail</label>
-                    <input type="email" name="mail" id="mail" placeholder="Correo electronico"/>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Correo electronico"/>
                 </div>
                 <div class="hijo-2">
                     <label for="password">Contraseña</label>
                     <input type="password" name="password" id="password" placeholder="Contraseña"/>
                 </div>
             </div>
-        
-                <button type="submit" name="login" id="login">Ingresar</button>
+                <input id= "login" type="submit" value="Ingresar">
+                
                 
                 <div class ="extras">   
-                   <a href="/register"><p>Registrarse</p></a>
-                    <p>Olvide mi contraseña</p>
+                   <a id="extras" href="/register"><p>Registrarse</p></a>
+                   <p>Olvide mi contraseña</p>
                 </div>
             </form>
     </main>

@@ -1,10 +1,12 @@
+const path = require('path');
 const usersController = require('../controllers/controller');
+const { check } = require('express-validator')
 
 module.exports = function(app) {
 
     app.get('/', usersController.homeView);
 
-    app.get('/detailProduct', usersController.detailProd);
+    app.get('/detailProduct/:id', usersController.detailProd);
 
     app.get('/cart', usersController.cartView);
 
@@ -12,4 +14,12 @@ module.exports = function(app) {
 
     app.get('/register', usersController.registerView);
 
+    app.post('/addUser',
+    [
+    check ('name').isLength({ min: 3 }).withMessage('El nombre debe tener al menos 3 caracteres'),
+    check ('username').isLength({ min: 3 }).withMessage('El usuario debe tener al menos 3 caracteres'),
+    check ('email').isEmail().withMessage('Correo invalido')
+    ], usersController.addUser)
+
+    app.post('/login', usersController.login)
 };

@@ -6,7 +6,7 @@
    <body>
     <%- include('./partials/Header') %>
     <main class="register-main">
-        <form method="get" action="/info"> 
+        <form action="addUser" method="post"> 
             <div class="padre1">
                 <div class="hijo1">
                 <label for="name">Nombre</label>
@@ -32,7 +32,7 @@
         
             <div class="padre3">
                 <div class="hijo3">
-                <label for="email">Mail</label>
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Ingresar e-mail" required/>
                 </div>
                 <div class="hijo3-2">

@@ -1,34 +1,28 @@
 {
-    "products": [
+    "prods": [
       {
         "id": 1,
         "title": "Remera de Anime Berserk",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore!",
-        "precio": "$3500"
+        "precio": "$3500",
+        "alt": "Remera de Anime Berserk",
+        "img": "/imgs/product1.jpg"
       },
       {
         "id": 2,
         "title": "Remera de Ghost In The Shell",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore!",
-        "precio": "$3500"
+        "precio": "$3500",
+        "alt": "Remera de Ghost In The Shell",
+        "img": "/imgs/product2.jpg"
       },
       {
         "id": 3,
         "title": "Remera de HE-MAN",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore!",
-        "precio": "$3500"
-      },
-      {
-        "id": 4,
-        "title": "Remera de ",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore!",
-        "precio": "$3500"
-      },
-      {
-        "id": 5,
-        "title": "Remera de ",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore!",
-        "precio": "$3500"
+        "precio": "$3500",
+        "alt": "Remera de HE-MAN",
+        "img": "/imgs/product3.jpg"
       }
     ]
   }

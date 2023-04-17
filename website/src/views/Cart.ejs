@@ -6,23 +6,15 @@
 <body>
     <%-include('./partials/Header') %>
     <section class="carrito">
-    
-        <div id="producto1">
-            <h1 class="title-prod">Remera de Anime Berserk</h1> 
-            <img class="img-cart" src="/imgs/product1.jpg" alt="berserk" />
+        <% prods.forEach(function(prod) { %>
+        <div id="productos">
+            <h1 class="title-prod"><%= prod.title %></h1> 
+            <img class="img-cart" src="<%= prod.img %>" alt="<%= prod.alt %>"  />
          </div> 
          <button class="boton-cart">-</button>
          <button class="boton-cart">+</button>
-         <h2 class="price">$3500</h2>     
-    
-         <div id="producto2">
-            <h1 class="title-prod">Remera de Ghost in the shell</h1>
-            <img class="img-cart" src="/imgs/product2.jpg" alt="berserk" />
-         </div>
-            <button class="boton-cart">-</button>
-            <button class="boton-cart">+</button>
-            <h2 class="price">$3500</h2>   
-        
+         <h2 class="price"><%= prod.precio %></h2>     
+         <% }); %>
          <div class="total">
         <p class="total-1">TOTAL:</p>
         <p class="total-1">$7000</p>
