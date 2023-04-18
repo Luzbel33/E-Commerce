@@ -7,7 +7,6 @@ const getUsers = () => {
     const usersJson = JSON.parse(users);
     return usersJson.users;
 };
-console.log(getUsers());
 
 const findUserByMail = (email) => {
     const users = getUsers();
