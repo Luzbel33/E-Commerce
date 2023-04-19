@@ -5,6 +5,7 @@
       "name": "Admin",
       "username": "AdminUser",
       "password": "$2b$10$ngCtCeZztwEd8BOhi8ORqexD/RP76e/WT5jHkoPcGUCX74IibXzBq",
+      "confirmPassword": "$2b$10$ngCtCeZztwEd8BOhi8ORqexD/RP76e/WT5jHkoPcGUCX74IibXzBq",
       "email": "chinchulin@gmail.com",
       "birthdate": "01-01-01",
       "country": "Argentina",
@@ -17,7 +18,18 @@
       "country": "br",
       "phone": "1112233435",
       "email": "gravitty99@gmail.com",
-      "password": "$2b$10$Z8S9sgegi1H8Pxx6HxJd/OAxdUQbVazaZ/LeIakaSk0H.izH6LNqG"
+      "password": "$2b$10$Z8S9sgegi1H8Pxx6HxJd/OAxdUQbVazaZ/LeIakaSk0H.izH6LNqG",
+      "confirmPassword": "$2b$10$Z8S9sgegi1H8Pxx6HxJd/OAxdUQbVazaZ/LeIakaSk0H.izH6LNqG"
+    },
+    {
+      "id": 3,
+      "name": "Admin",
+      "username": "Admin",
+      "country": "arg",
+      "phone": "38714443433",
+      "email": "spidergian8@gmail.com",
+      "password": "$2b$10$tXlATHoSHBi3PQEE3VD70ORPLt3wX4Ku8q98gtS58rsxKd6Brnvfu",
+      "confirmPassword": "$2b$10$tXlATHoSHBi3PQEE3VD70ORPLt3wX4Ku8q98gtS58rsxKd6Brnvfu"
     }
   ]
 }

@@ -50,10 +50,16 @@ const addUser = (req, res) => {
     }
     users.push(newUser);
     writeUser(users);
-    res.redirect('/');
+    res.redirect('/')
 };
 
 const login = (req, res) => {
+    const errors = validationResult(req);
+                if(!errors.isEmpty()) {
+                    res.status(422).json({
+                        errors: errors.array()
+                    })
+                };
     let { email, password } = req.body;
     const user = findUserByMail(email);
     if (user.email === email && bcrypt.compareSync(password, user.password)) {
@@ -62,8 +68,8 @@ const login = (req, res) => {
     } else {
         res.send('Correo o contraseña incorrectos')
     };
-  
 };
+
 const logout = (req, res) => {
     req.session.destroy();
     res.clearCookie('nuevo');

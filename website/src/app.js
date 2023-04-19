@@ -5,7 +5,7 @@ const express = require('express');
 const path = require('path');
 const port = 3000;
 const routes = require('./routes/index');
-const dia = 1000 * 60 * 60 * 24
+const mins15 = 15 * 60 * 1000
 const morgan = require('morgan');
 
 const app = express(); 
@@ -14,7 +14,7 @@ app.use(session({
     name: 'nuevo',
     secret: '123456',
     saveUninitialized: false,
-    cookie: { maxAge: dia},
+    cookie: { maxAge: mins15 },
     resave: false
 }));
 
