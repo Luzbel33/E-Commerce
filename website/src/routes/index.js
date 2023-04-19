@@ -31,4 +31,8 @@ module.exports = function(app) {
         check ('e-mail')
         .isEmail().withMessage('Correo invalido'),
     ],usersController.login)
+
+    app.use((req, res) => {
+        res.status(404).send("ERROR: Pagina no encontrada");
+        });
 };
