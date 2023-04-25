@@ -1,18 +1,16 @@
 @font-face {
-    font-family: 'Mona Sans';
-src:
-    url('Mona-Sans.woff2') format('woff2 supports variations'),
-    url('Mona-Sans.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
-  }
+  font-family: 'MyFont';
+  src: url('/font/Mona-Sans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
   
 
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'Mona Sans';
+font-family: 'Mona Sans', sans-serif;
 }
 
 :root {
@@ -182,6 +180,7 @@ body, main{
 
 
 /** PRODUCT-DETAIL/2DA PAGINA */
+
 .img3{
     max-width: 70%;
     padding: 5px;
@@ -351,6 +350,13 @@ form{
     flex-direction: column;
     align-items: center;
     font-size: 1.2rem;
+    
+}
+#regist-label{
+    margin-left: 10px;
+}
+#birthday-label{
+    margin-left: 5px;
 }
 .padre1, .padre2, .padre3, .padre5{
     color: var(--sixth);
@@ -363,6 +369,7 @@ form{
     color: var(--sixth);
     display: flex;
     align-items: center;
+    
 }
 .hijo4, .hijo4-2{
     display: flex;
@@ -386,11 +393,15 @@ form{
     font-size: 1rem;
     margin-left: 80px;
 }
+
+input:hover{
+    background-color: #e0fffdfd;
+}
 input{
     font-size: 1rem;
     border-radius: 30px;
     width: 250px;
-    background-color: var(--fifth);
+    background-color: #ffffff;
     padding: 2.5px;
     margin: 2px;
 }
@@ -407,8 +418,11 @@ input{
     height: 40px;
     border-radius: 2rem;
 }
-
+#terms-cond{
+    height: 12px;
+}
 /** LOGIN /5TA PAGINA */
+
 .login{
     border-radius: 10px;
     width: 320px;
@@ -830,15 +844,19 @@ form{
     font-size: 1.5rem;
     margin-left: 80px;
 }
+input:hover{
+    background-color: #e0fffdfd;
+}
 input{
     font-size: 1.5rem;
     border-radius: 30px;
     width: 300px;
     height: 40px;
-    background-color: var(--fifth);
+    background-color: #ffffff;
     padding: 2.5px;
     margin: 15px;
 }
+
 #register{
 background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
 linear-gradient(to right, #56caf0, darkorchid) border-box;
@@ -848,6 +866,13 @@ font-size: 1.5rem;
 width: 200px;
 height: 50px;
 border-radius: 2rem;
+}
+#terms-cond{
+    height: 20px;
+   
+}
+#birthday-label{
+    margin-left: 68px;
 }
 
 /** LOGIN /5TA PAGINA */
@@ -884,6 +909,7 @@ border-radius: 2rem;
     height: 50px;
     border-radius: 2rem;
 }
+
 .hijo, .hijo-2{
     display: flex;
     flex-direction: column;
