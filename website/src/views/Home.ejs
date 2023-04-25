@@ -7,7 +7,7 @@
     <%- include('./partials/Header') %>
     <main>
         <div class="banner">   
-            <img class="img2" src="/imgs/banner.jpg" alt="banner" />
+            <img class="img2" src="/imgs/banner.png" alt="banner" />
     </div>
     <section class="home-bg">
     <div id="product"> 
@@ -17,9 +17,9 @@
         <img class="prod-img" src="<%= prod.img %>" alt="<%= prod.alt %>" />
         <h2 class="desc"><%= prod.desc %></h2>
     
-        <div class="botones">   
-            <button class="boton"><a href="/detailProduct/<%= prod.id %>">Ver mas</a></button>
-            <button class="boton"><a href="/cart">Carrito</a></button>
+        <div class="botones"">   
+            <button class="boton" id="boton"><a id="boton" href="/detailProduct/<%= prod.id %>">Ver mas</a></button>
+            <button class="boton" id="boton"><a id="boton" href="/cart">Carrito</a></button>
             <p class="precio"><%= prod.precio %></p>
         </div>
         

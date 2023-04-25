@@ -1,10 +1,18 @@
-@import url("https://fonts.google.com/specimen/Spectral?selection.family=Catamaran:wght@100;300;500;800;900|Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900");
+@font-face {
+    font-family: 'Mona Sans';
+src:
+    url('Mona-Sans.woff2') format('woff2 supports variations'),
+    url('Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
 
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: "Roboto", "sans-serif";
+font-family: 'Mona Sans';
 }
 
 :root {
@@ -16,45 +24,43 @@ font-family: "Roboto", "sans-serif";
     --sixth: #f2f2f2;
 }
 
-body{
-    background-color: var(--third);
+main,body{
+    background-color: black;
 }
 
-/* HEADER */
+/** HEADER */
 
 .contenedor {
+    min-height: 50px;
     display: flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    background: -moz-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: -webkit-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: linear-gradient(135deg, #000000 0%, #4C1A6C 50%, #000000 100%);
+    background: black;
     gap: 5px;
 }
 .index-botones{
-   color: var(--sixth); 
-   margin-right: 50px;
-   margin-top: 10px;
-   padding: 2px;
-
+    display: flex;
+    flex-direction: column;
+    color: var(--sixth); 
+    margin-left: -20px;
+    padding: 2px;
+    font-size: 0.8rem;
 }
 .div1 {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--sixth);
-    min-width: 140px;
+    min-width: 180px;
+    margin-left: -10px;
     height: 15px;
-    margin-top: 40px;
-    margin-left: -50px;
-    margin-right: 30px;
     border-radius: 40px;
-    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
 }
 .img1{
-    padding-top: 7px;
-    height: 65px;
-    margin: 3px;
+    padding-bottom: 5px;
+    height: 50px;
+    
 }
 .div2 {
     display: flex;
@@ -62,22 +68,22 @@ body{
     align-items: center;
     justify-content: center;
     gap: 2px;
-    background-color: var(--fifth);
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #7a45ba), radial-gradient(circle at 0% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to bottom, #7a45ba, #7a45ba), radial-gradient(circle at 0% 0%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to left, #7a45ba, #7a45ba), radial-gradient(circle at 100% 0%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to top, #7a45ba, #7a45ba);
+    background-size: 0px 0px, calc(100% - 22px) 0px, 0px 0px, 2.5px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
     max-height: 40px;
     min-height: 40px;
     min-width: 30px;
     max-width: 30px;
-    margin-top: 22px;
-    margin-right: 5px;
-    border-radius: 10px;
-    box-shadow: 0.5px 2.5px 10.5px 1.5px black;
+    margin-right: 15px;
     cursor: pointer;
 }
 .div3 {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--primary);
-    min-height: 3px;
+    background-color: #56caf0;
+    min-height: 2px;
     min-width: 15px;
     border-radius: 15px;
 }
@@ -85,8 +91,9 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 390px;
-  min-height: 20vh;
+  min-width: 390px;
+  min-height: 5vh;
+  max-height: 100px;
   border-radius: 0;
   box-shadow: 0.5px 2.5px 20.5px 0.5px black;
   overflow: hidden;
@@ -100,39 +107,50 @@ body{
     object-fit: cover; 
 }
 
-/* HOME */
-
+/** HOME */
+body, main{
+    background-color: black;
+}
 .home-bg{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     margin: 25px 22px;
-    background: -moz-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: -webkit-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: linear-gradient(135deg, #000000 0%, #4C1A6C 50%, #000000 100%);
 }
 #product{
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .title {
-    margin: -5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     color: var(--sixth);
 }
 .prod-img{
     margin: 12px 5px 5px;
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 40px;
     box-shadow: 0.5px 2.5px 20.5px 0.5px black;
 }
 .desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
-    margin: 12px 5px 5px;
+    margin-top: 10px;
+    margin-left: 25px;
     color: var(--sixth);
 }
 .precio {
@@ -142,14 +160,19 @@ body{
     margin: 25px 10px 35px;
     color: var(--sixth);
 }
+#boton{
+    color:white;
+}
 .boton{
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border: 2px solid transparent;
+    background-color: black;
     height: 40px;
     width: 80px;
-    background-color: var(--secondary);
     margin: 15px 15px 5px;
     font-size: 1.2rem;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 
 .botones{
@@ -158,10 +181,13 @@ body{
 }
 
 
-/* PRODUCT-DETAIL/2DA PAGINA */
+/** PRODUCT-DETAIL/2DA PAGINA */
 .img3{
-    max-width: 100%;
+    max-width: 70%;
     padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
     border-radius: 40px;
     box-shadow: 0.5px 2.5px 20.5px 0.5px black;
 }
@@ -171,53 +197,67 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px;
+    margin-top: 15px;
+}
+.product-det-img{  
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
 }
 .product-title{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin-left: 25px;
+    margin-top: 20px;
     font-size: 2em; 
+    color: var(--sixth);
 }
 .product-desc{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin-left: 25px;
     font-size: 1.5em; 
+    color: var(--sixth);
 }
 .product-info{
     display: flex;
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 15px;
+}
+#boton4{
+    color: var(--sixth)
 }
 .boton4{
-    background-color: var(--secondary);
-    padding: 2.5px;
-    margin: 20px;
-    font-size: 40px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    min-width: 110px;
+    max-width: 150px;
+    background-color: black;
+    padding: 2px;
+    font-size: 25px;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
+   
+}
+.prod-price{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
 }
 .precio4{
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 20px;
+  
     padding: 5px;
-    font-size: 2em
+    font-size: 2em;
+    color: var(--sixth);
 }
-.boton2{
-    background-color: var(--secondary);
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 400px;
-    font-size: 40px;
-    border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
-}
-/* CARRITO/3RA PAGINA */
+
+/** CARRITO/3RA PAGINA */
 
 .carrito{
     display: flex;
@@ -225,12 +265,13 @@ body{
     flex-wrap: wrap;
     align-items: center;
     margin: 25px 22px;
-    background: -moz-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: -webkit-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: linear-gradient(135deg, #000000 0%, #4C1A6C 50%, #000000 100%);
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
     width: 350px;
     height: 700px;
-    border-radius: 2rem;
+    border-radius: 10px;
     box-shadow: 1.5px 3.5px 5.5px 3.5px rgba(0, 0, 0, 0.329);
 }
 #productos{
@@ -258,24 +299,29 @@ body{
     border-radius: 25px;
     box-shadow: 0.5px 2.5px 20.5px 0.5px black;
 }
+#botones-cart{
+    color: var(--sixth);
+}
 .boton-cart{
-    background-color: var(--secondary);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border: 2px solid transparent;
     margin: -25px 30px;
     font-size: 1.2rem;
     width: 40px;
     height: 25px;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 .boton-cart2{
-    background-color: var(--secondary);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border: 2px solid transparent;
     padding: 5px;
     margin: -30px 200px 5px;
     font-size: 15px;
     width: 60px;
     height: 30px;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 .total-1{
 color: var(--sixth);
@@ -289,19 +335,18 @@ font-size: 1.2rem;
     font-size: 1.2rem;
 }
 
-/* REGISTER/4TA PAGINA */
-main{
-    background-color: var(--third);
-}
+/** REGISTER/4TA PAGINA */
+
 form{
-    border-radius: 40px;
+    border-radius: 10px;
     width: 320px;
-    height: 580px;
+    height: 600px;
     padding: 20px 100px;
     margin: 25px auto;
-    background: -moz-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: -webkit-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: linear-gradient(135deg, #000000 0%, #4C1A6C 50%, #000000 100%);
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -350,26 +395,30 @@ input{
     margin: 2px;
 }
 #register{
-    background-color: var(--secondary);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border: 2px solid transparent;
+    margin-top: 10px;
+    background-color: black;
     color: var(--sixth);
     padding: 5px;
     font-size: 1.2rem;
     width: 120px;
-    height: 50px;
+    height: 40px;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 
-/* LOGIN /5TA PAGINA */
+/** LOGIN /5TA PAGINA */
 .login{
-    border-radius: 40px;
+    border-radius: 10px;
     width: 320px;
-    height: 400px;
+    height: 420px;
     padding: 20px 100px;
     margin: 25px auto;
-    background: -moz-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: -webkit-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: linear-gradient(135deg, #000000 0%, #4C1A6C 50%, #000000 100%);
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -380,13 +429,14 @@ input{
 }
 #login{
     color: var(--sixth);
-    background-color: var(--secondary);
-    padding: 5px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border: 2px solid transparent;
+    padding: 2px;
     font-size: 1.2rem;
     width: 120px;
     height: 30px;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 .hijo, .hijo-2{
     color: var(--sixth);
@@ -407,6 +457,7 @@ input{
 }
 #extras{
     color: var(--sixth);
+    margin-bottom: 5px;
 }
 
 a{
@@ -414,7 +465,7 @@ a{
     color:#000; 
 }
 
-/* Footer */
+/** Footer */
 
 .foot {
     display: flex;
@@ -422,86 +473,63 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     min-width: 390px;
-    background: -moz-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: -webkit-linear-gradient(-45deg, #000000 0%, #4C1A6C 50%, #000000 100%);
-    background: linear-gradient(135deg, #000000 0%, #4C1A6C 50%, #000000 100%);
+    background-color:black;
     padding: 10px;
     margin: auto;
 }
-.social{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 0 8px;
-    font-size: 2em;
-}
-.foot-titles{
-    color: var(--sixth);
+
+ .foot-img, .foot-titles, .foot3, .foot4 {
     display: none;
-    flex-direction:row;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 2rem;
-}
-.foot-desc, .foot-desc2{
-    font-size: 1.2rem;
-    color: var(--sixth);
-}
- .foot3, .foot4 {
-    display: none;
-    flex-direction:column;
-    flex-wrap: wrap;
-    padding: 5px;
-    font-size: 1.5em;
-}
-.foot-img{
-    display: none;
-    height: 200px;
-    margin: 0px;
 }
 .foot-img2{
-    width: 100%;
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: auto;
 }
 .copyright{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 1.5em;
-    color: var(--fifth);
+    color: var(--sixth);
     width: 100%;
 }
-/* PARTE RESPONSIVE PARA DESKTOP */
+
+/*! PARTE RESPONSIVE PARA DESKTOP */
 
 @media only screen and (min-width: 1020px) {
 
-    body{
-        background-color: var(--third)
+    main, body{
+        background-color: black;
     }
     .contenedor {
+        height: 140px;
         display: flex;
         flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        background-color: var(--primary);
+        background-color: black;
         padding: 15px;
+        margin-bottom: 15px;
     }
     .div1 {
         display: flex;
         flex-wrap: wrap;
         background-color: var(--sixth);
-        min-width: 1000px;
+        min-width: 1100px;
         height: 40px;
         margin: 35px;
-        margin-top: 50px;
-        margin-right:80px;
+        margin-top: 12px;
+        margin-right: 80px;
         border-radius: 40px;
         box-shadow: 0.5px 2.5px 20.5px 0.5px black;
     }
     .img1{
-        height: 125px;
+        height: 150px;
+        margin-right: 15px;
     }
     .div2 {
         display: flex;
@@ -510,27 +538,39 @@ a{
         justify-content: center;
         flex-wrap: wrap;
         gap: 2.5px;
-        background-color: var(--fifth);
+        background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #45b8ba), radial-gradient(circle at 0% 100%, transparent 7px, #45b8ba 7px, #45b8ba 11px, transparent 11px), linear-gradient(to bottom, #45b8ba, #45b8ba), radial-gradient(circle at 0% 0%, transparent 7px, #45b8ba 7px, #45b8ba 11px, transparent 11px), linear-gradient(to left, #45b8ba, #7a45ba), radial-gradient(circle at 100% 0%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to top, #7a45ba, #7a45ba);
+        background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+        background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+        background-repeat: no-repeat;
         min-height: 80px;
         min-width: 70px;
-        margin-top: 30px;
+        margin-top: -20px;
         margin-left: 20px;
         border-radius: 15px;
         box-shadow: 0.5px 2.5px 10.5px 1.5px black;
         cursor: pointer;
+        margin-right: 20px;
     }
     .div3{
         display: flex;
         flex-wrap: wrap;
-        background-color: var(--primary);
+        background-color: #56caf0;
         min-height: 5px;
         min-width: 40px;
         margin: 2px;
         border-radius: 15px;
     }
-    
+    .index-botones{
+        display: flex;
+        flex-direction: column;
+        color: var(--sixth); 
+        margin-left: -40px;
+        margin-bottom: 10px;
+        padding: 2.5px;
+    }
     .banner{
         min-width: 100%;
+        max-height: 500px;
         height: 400px;
         box-shadow: 0.5px 2.5px 20.5px 0.5px black;
         overflow: hidden;
@@ -538,22 +578,25 @@ a{
     .img2{
         width: 100%;
     }
-    
+/**HOME **/
    .home-bg{
-    margin-left: 325px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 2rem;
-    box-shadow: 1.5px 3.5px 5.5px 3.5px rgba(0, 0, 0, 0.329);
-    width: 1200px;
     box-shadow: none;
     height: 100%; 
    }
    
     #product{
+        background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+        background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+        background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+        background-repeat: no-repeat;
+        
         padding: 15px;
-        margin-top: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -581,30 +624,38 @@ a{
         margin: 25px 10px 35px;
     }
     
-    .boton{
-        height: 60px;
-        width: 120px;
-        background-color: var(--secondary);
-        margin: 15px 20px 5px;
-        font-size: 2rem;
-        border-radius: 2rem;
-        box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
+   #boton{
+    color:white;
+}
+.boton{
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+    background-color: black;
+    height: 60px;
+    width: 120px;
+    margin: 15px 15px 5px;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+
+ /** PROD. DETAIL */
+     .img3{
+    max-width: 100%;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 40px;
+    box-shadow: 0.5px 2.5px 20.5px 0.5px black;
     }
-    
-    .botones{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
- /* PROD. DETAIL */
-
     .product-detail {
         display: flex;
         flex-direction:row;
         justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 10px;
+        margin-top: 40px;
+        margin-bottom:40px;
     }
     .product-title{
         display: flex;
@@ -618,26 +669,33 @@ a{
         margin: 20px;
         font-size: 1.5em; 
     }
-    
+    #boton4{
+        color: var(--sixth)
+    }
     .boton4{
-        height: 60px;
-        width: 120px;
-        background-color: var(--secondary);
-        margin: 15px 20px 5px;
+        background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+        linear-gradient(to right, #56caf0, darkorchid) border-box;
+        border: 2px solid transparent;
+        margin-bottom: 10px;
+        min-width: 110px;
+        width: 150px;
+        background-color: black;
+        margin-bottom: 20px;
         font-size: 2rem;
-        border-radius: 2rem;
-        box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
     }
 
- /* CARRITO/3RA PAGINA */
+ /** CARRITO/3RA PAGINA */
 
 
 .carrito{
     margin-left: 325px;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: var(--secondary);
-    border-radius: 2rem;
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    border-radius: 10px;
     box-shadow: 1.5px 3.5px 5.5px 3.5px rgba(0, 0, 0, 0.329);
     width: 1200px;
     box-shadow: none;
@@ -668,13 +726,15 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: var(--secondary);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
     margin: 180px 10px;
     font-size: 2rem;
     width: 100px;
     height: 40px;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 .price{
     margin: 120px;
@@ -685,13 +745,15 @@ a{
     align-items: center;
 }
 .boton-cart2{
-    background-color: var(--secondary);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
     padding: 10px;
     font-size: 1.5rem;
     width: 100px;
     height: 50px;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 .total{
     display: flex;
@@ -705,17 +767,20 @@ a{
 }
 
 
-    /* REGISTER/4TA PAGINA */
+    /** REGISTER/4TA PAGINA */
 .register-main{
-    background-color: var(--third);
-    padding: 50px;
+    background-color: black;
+    padding: 15px;
 }
 form{
-    border-radius: 80px;
+    border-radius: 10px;
     width: 800px;
     height: 800px;
     padding: 50px 100px;
-    background-color: var(--secondary);
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -775,23 +840,30 @@ input{
     margin: 15px;
 }
 #register{
-background-color: var(--secondary);
+background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+linear-gradient(to right, #56caf0, darkorchid) border-box;
+border: 2px solid transparent;
 padding: 5px;
 font-size: 1.5rem;
 width: 200px;
 height: 50px;
 border-radius: 2rem;
-box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 
-/* LOGIN /5TA PAGINA */
+/** LOGIN /5TA PAGINA */
 
 .login{
-    border-radius: 80px;
+    background-color: #000;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
     width: 800px;
     height: 800px;
     padding: 50px 100px;
-    background-color: var(--secondary);
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -802,13 +874,15 @@ box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
     height: 200px;
 }
 #login{
-    background-color: var(--secondary);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #56caf0, darkorchid) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
     padding: 5px;
     font-size: 2rem;
     width: 200px;
     height: 50px;
     border-radius: 2rem;
-    box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 }
 .hijo, .hijo-2{
     display: flex;
@@ -833,14 +907,14 @@ box-shadow: 2.5px 2.5px 2.5px 2.5px var(--fifth);
 a{
     text-decoration: none; color:#000; 
 }
-    /* FOOTER */
+    /** FOOTER */
 
     .foot {
         display: flex;
         flex-direction:row;
         justify-content: space-around;
         flex-wrap: wrap;
-        background-color: var(--primary);
+        background-color:black;
         padding: 10px;
         margin: auto;
     }
@@ -854,6 +928,8 @@ a{
         font-size: 2em;
     }
     .foot-titles{
+        color: var(--sixth);
+        margin-top: 80px;
         display: flex;
         flex-direction:row;
         justify-content: center;
@@ -861,6 +937,7 @@ a{
         font-size: 2rem;
     }
     .foot-desc, .foot-desc2{
+        color: var(--sixth);
         font-size: 1.2rem;
     }
      .foot3, .foot4{
@@ -870,20 +947,20 @@ a{
         padding: 5px;
         font-size: 1.5em;
     }
-    .foot-img{
+    .foot-img, .foot-img2{
         display: flex;
         flex-wrap: wrap;
-        height: 200px;
+        height: 400px;
         margin: 0px;
     }
+    
     .copyright{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         font-size: 1.5em;
-        color:var(--fifth);
+        color:var(--sixth);
         width: 100%;
     }
-    
 
 };

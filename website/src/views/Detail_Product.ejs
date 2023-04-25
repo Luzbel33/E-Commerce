@@ -11,9 +11,12 @@
                 <h1 class="product-title"><%= prod.title %></h1>
                 <img class="img3" src="<%= prod.img %>">   
                 <p class="product-desc"><%= prod.desc %> </p> 
-                <p class="precio4"><%= prod.precio %></p>
-                <button class="boton4">Comprar</button>
+                <div class="prod-price">
+                    <button class="boton4" id="boton4">Comprar</button>
+                    <p class="precio4"><%= prod.precio %></p>
+                </div>
             </div>
+        </div>
     </section>
     <%-include('./partials/Footer') %>
 </body>

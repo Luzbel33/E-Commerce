@@ -11,14 +11,14 @@
             <h1 class="title-prod"><%= prod.title %></h1> 
             <img class="img-cart" src="<%= prod.img %>" alt="<%= prod.alt %>"  />
          </div> 
-         <button class="boton-cart">-</button>
-         <button class="boton-cart">+</button>
+         <button class="boton-cart" id="botones-cart">-</button>
+         <button class="boton-cart" id="botones-cart">+</button>
          <h2 class="price"><%= prod.precio %></h2>     
          <% }); %>
          <div class="total">
         <p class="total-1">TOTAL:</p>
         <p class="total-1">$7000</p>
-        <button class="boton-cart2">PAGAR</button>
+        <button class="boton-cart2" id="botones-cart">PAGAR</button>
         </div>
     </section>
     <%-include('./partials/Footer') %>
