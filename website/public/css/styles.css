@@ -5,7 +5,6 @@
   font-style: normal;
 }
   
-
 * {
 margin: 0;
 padding: 0;
@@ -22,12 +21,11 @@ font-family: 'Mona Sans', sans-serif;
     --sixth: #f2f2f2;
 }
 
-main,body{
-    background-color: black;
+body{
+    background-color: rgb(0, 0, 0);
 }
 
 /** HEADER */
-
 .contenedor {
     min-height: 50px;
     display: flex;
@@ -106,10 +104,8 @@ main,body{
 }
 
 /** HOME */
-body, main{
-    background-color: black;
-}
 .home-bg{
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -117,6 +113,8 @@ body, main{
     margin: 25px 22px;
 }
 #product{
+    background-color: #000;
+    border-radius: 10px;
     background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
     background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
@@ -172,7 +170,6 @@ body, main{
     font-size: 1.2rem;
     border-radius: 2rem;
 }
-
 .botones{
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +177,6 @@ body, main{
 
 
 /** PRODUCT-DETAIL/2DA PAGINA */
-
 .img3{
     max-width: 70%;
     padding: 5px;
@@ -199,6 +195,7 @@ body, main{
     margin-top: 15px;
 }
 .product-det-img{  
+    background-color: #000;
     background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
     background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
@@ -257,7 +254,6 @@ body, main{
 }
 
 /** CARRITO/3RA PAGINA */
-
 .carrito{
     display: flex;
     flex-direction: row;
@@ -272,6 +268,7 @@ body, main{
     height: 700px;
     border-radius: 10px;
     box-shadow: 1.5px 3.5px 5.5px 3.5px rgba(0, 0, 0, 0.329);
+    background-color: #000;
 }
 #productos{
     display: flex;
@@ -335,8 +332,8 @@ font-size: 1.2rem;
 }
 
 /** REGISTER/4TA PAGINA */
-
 form{
+    background-color: #000;
     border-radius: 10px;
     width: 320px;
     height: 600px;
@@ -393,7 +390,6 @@ form{
     font-size: 1rem;
     margin-left: 80px;
 }
-
 input:hover{
     background-color: #e0fffdfd;
 }
@@ -421,8 +417,8 @@ input{
 #terms-cond{
     height: 12px;
 }
-/** LOGIN /5TA PAGINA */
 
+/** LOGIN /5TA PAGINA */
 .login{
     border-radius: 10px;
     width: 320px;
@@ -473,7 +469,6 @@ input{
     color: var(--sixth);
     margin-bottom: 5px;
 }
-
 a{
     text-decoration: none;
     color:#000; 
@@ -488,8 +483,6 @@ a{
     flex-wrap: wrap;
     min-width: 390px;
     background-color:black;
-    padding: 10px;
-    margin: auto;
 }
 
  .foot-img, .foot-titles, .foot3, .foot4 {
@@ -511,12 +504,11 @@ a{
 }
 
 /*! PARTE RESPONSIVE PARA DESKTOP */
-
 @media only screen and (min-width: 1020px) {
+    /*!* main{
+        background: radial-gradient(circle, rgba(86,202,240,1) 0%, rgba(0,0,0,1) 50%);
+    } /*!*/
 
-    main, body{
-        background-color: black;
-    }
     .contenedor {
         height: 140px;
         display: flex;
@@ -526,8 +518,8 @@ a{
         justify-content: space-evenly;
         flex-wrap: wrap;
         background-color: black;
-        padding: 15px;
-        margin-bottom: 15px;
+       
+       
     }
     .div1 {
         display: flex;
@@ -536,14 +528,14 @@ a{
         min-width: 1100px;
         height: 40px;
         margin: 35px;
-        margin-top: 12px;
+        margin-top: 20px;
         margin-right: 80px;
         border-radius: 40px;
         box-shadow: 0.5px 2.5px 20.5px 0.5px black;
     }
     .img1{
         height: 150px;
-        margin-right: 15px;
+        margin-right: 25px;
     }
     .div2 {
         display: flex;
@@ -579,8 +571,8 @@ a{
         flex-direction: column;
         color: var(--sixth); 
         margin-left: -40px;
-        margin-bottom: 10px;
-        padding: 2.5px;
+        margin-bottom: 12px;
+        padding: 0.2px;
     }
     .banner{
         min-width: 100%;
@@ -588,11 +580,14 @@ a{
         height: 400px;
         box-shadow: 0.5px 2.5px 20.5px 0.5px black;
         overflow: hidden;
+        
     }
     .img2{
         width: 100%;
-    }
-/**HOME **/
+        
+}
+
+/** HOME **/
    .home-bg{
     display: flex;
     flex-direction: column;
@@ -603,14 +598,12 @@ a{
    }
    
     #product{
+        background-color: #000;
+        border-radius: 10px;
         background-image: radial-gradient(circle at 100% 100%, transparent 7px, #7a45ba 7px, #7a45ba 11px, transparent 11px), linear-gradient(to right, #7a45ba, #000000), radial-gradient(circle at 0% 100%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to bottom, #000000, #56caf0), radial-gradient(circle at 0% 0%, transparent 7px, #56caf0 7px, #56caf0 11px, transparent 11px), linear-gradient(to left, #56caf0, #000000), radial-gradient(circle at 100% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to top, #000000, #7a45ba);
         background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
         background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
         background-repeat: no-repeat;
-        
-        padding: 15px;
-        margin-top: 40px;
-        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -654,7 +647,7 @@ a{
     border-radius: 2rem;
 }
 
- /** PROD. DETAIL */
+/** PROD. DETAIL */
      .img3{
     max-width: 100%;
     padding: 5px;
@@ -698,9 +691,7 @@ a{
         font-size: 2rem;
     }
 
- /** CARRITO/3RA PAGINA */
-
-
+/** CARRITO/3RA PAGINA */
 .carrito{
     margin-left: 325px;
     margin-top: 40px;
@@ -728,14 +719,12 @@ a{
     font-size: 2rem;
     padding: 15px;
 }
-
 .img-cart{
     max-width: 50%;
     max-height: 100%;
     border-radius: 25px;
     margin: 10px;
 }
-
 .boton-cart{
     display: flex;
     flex-direction: row;
@@ -781,7 +770,7 @@ a{
 }
 
 
-    /** REGISTER/4TA PAGINA */
+/** REGISTER/4TA PAGINA */
 .register-main{
     background-color: black;
     padding: 15px;
@@ -876,7 +865,6 @@ border-radius: 2rem;
 }
 
 /** LOGIN /5TA PAGINA */
-
 .login{
     background-color: #000;
     margin-top: 40px;
@@ -909,7 +897,6 @@ border-radius: 2rem;
     height: 50px;
     border-radius: 2rem;
 }
-
 .hijo, .hijo-2{
     display: flex;
     flex-direction: column;
@@ -933,16 +920,14 @@ border-radius: 2rem;
 a{
     text-decoration: none; color:#000; 
 }
-    /** FOOTER */
 
+/** FOOTER */
     .foot {
         display: flex;
         flex-direction:row;
         justify-content: space-around;
         flex-wrap: wrap;
-        background-color:black;
-        padding: 10px;
-        margin: auto;
+        background-color:black;  
     }
     .social{
         display: flex;

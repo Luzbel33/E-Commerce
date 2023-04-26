@@ -18,6 +18,11 @@ app.use(session({
     resave: false
 }));
 
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+    });
+    
 app.use(cookieParser());
 
 app.set('views', path.resolve(__dirname, '../views'));
@@ -28,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, '../public')));
+
 routes(app);
 
 app.listen(port, () => {
