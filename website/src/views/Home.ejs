@@ -10,9 +10,9 @@
             <img class="img2" src="/imgs/banner.png" alt="banner" />
     </div>
     <section class="home-bg">
-    <div id="product"> 
+   
     <% prods.forEach(function(prod) { %>
-
+        <div id="product"> 
         <h1 class="title"><%= prod.title %></h1>
         <img class="prod-img" src="<%= prod.img %>" alt="<%= prod.alt %>" />
         <h2 class="desc"><%= prod.desc %></h2>
@@ -22,9 +22,9 @@
             <button class="boton" id="boton"><a id="boton" href="/cart">Carrito</a></button>
             <p class="precio"><%= prod.precio %></p>
         </div>
-        
+        </div>
         <% }); %>
-    </div>
+    
 </section>
     </main>
     <%-include('./partials/Footer') %>
