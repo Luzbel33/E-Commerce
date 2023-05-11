@@ -15,7 +15,7 @@ LA PAGINA NO ESTÁ TERMINADA, LA VERSION ACTUAL ES SOLO UN BOCETO, PRONTO SERÁ 
 
 ### *El público objetivo ronda entre los 15 años y los 35 años*
 
---
+---
 
 <!-- English Version -->
 # DISCLAIMER:
